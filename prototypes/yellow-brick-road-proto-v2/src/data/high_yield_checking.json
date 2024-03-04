@@ -1,0 +1,37 @@
+[
+  {
+    "Category": "Business Checking",
+    "Vendor": "Novo Business Checking",
+    "BestFor": "Free features and ease of use.",
+    "Features": "No monthly fees, unlimited transactions, free debit card with ATM fee reimbursement, mobile banking and bill pay, integrations with popular accounting software",
+    "Cons": "Limited physical branch access, lower check deposit limits compared to some competitors"
+  },
+  {
+    "Category": "Business Checking",
+    "Vendor": "BlueVine Business Checking",
+    "BestFor": "High-yield earners and businesses with frequent deposits.",
+    "Features": " 1% cash back on debit card purchases (up to $1,000 per month), APY of 1.00% on all balances (subject to change), free bill pay, mobile banking, integration with popular accounting software.",
+    "Cons": "$10 monthly maintenance fee waived with a $3,000 minimum daily balance, lower check deposit limits compared to some competitors"
+  },
+  {
+    "Category": "Business Checking",
+    "Vendor": "Chase Business Complete Banking",
+    "BestFor": "Businesses needing access to a broad range of banking services and national branch network",
+    "Features": "$15 monthly maintenance fee waived with a $1,500 minimum monthly balance, 25 free monthly transactions, additional fees for exceeding free transactions, cashier's checks, positive pay, night depository (varies by branch), mobile banking and bill pay.",
+    "Cons": "Monthly maintenance fee if minimum balance not met, limited free transactions compared to some competitors."
+  },
+  {
+    "Category": "Business Checking",
+    "Vendor": "Wells Fargo Initiate Business Checking",
+    "BestFor": "Businesses with high transaction volume and needing access to a national branch network.",
+    "Features": "$10 monthly maintenance fee waived with any balance, unlimited free monthly transactions, free cashier's checks, positive pay (varies by account), night depository (varies by branch), mobile banking and bill pay.",
+    "Cons": " Lower cash back rewards compared to some competitors, potential fees for exceeding included services."
+  },
+  {
+    "Category": "Business Checking",
+    "Vendor": "EverBank Small Business Checking",
+    "BestFor": "Businesses seeking an interest-bearing checking account with no monthly fees.",
+    "Features": "No monthly fees, 0.50% APY on all balances, 100 free transactions per month, mobile banking and bill pay.",
+    "Cons": "Limited to sole proprietors and single-member LLCs, lower interest rate compared to some high-yield savings accounts"
+  }
+]

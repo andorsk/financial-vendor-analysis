@@ -1,0 +1,9 @@
+#+title: Protocols
+#+id: 39ee8f03-0c60-33ce-c401-35ad8dbf7aa3
+#+author:    Andor Kesselman
+#+email:     ando@andor.us
+#+setupfile: ~/.config/doom/org-templates/level-2.org
+#+description: Protocols Information
+
+- Protocol :: A series of steps that a financial _patient_ must undergo to get
+  financially heathy

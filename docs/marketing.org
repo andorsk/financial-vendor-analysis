@@ -1,0 +1,16 @@
+#+title: Marketing
+#+author:    Andor Kesselman
+#+email:     andor@andor.us
+#+setupfile: ~/.config/doom/org-templates/level-2.org
+
+
+* Target Market
+- HUB for Small Business Owner
+- Finance Pocket Guide
+
+* Personas
+
+#+caption:  Personas
+| Name            | Category       | Description                                                                                                                                                                                                                                                               |
+|-----------------+----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Andor Kesselman | Existing Basic | Andor has a business (LLC) and has a consulting practice. He has some familiarity with starting a company and has been running it for a while, but is generally very basic with his approach. He does not have a lot of time to investigate nuances of financial systems. |

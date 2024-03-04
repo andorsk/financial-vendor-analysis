@@ -1,0 +1,55 @@
+#+title: Base Protocol
+#+id: 660ad3fb-12f3-3b24-951a-6ca18a26f05a
+#+author:    Andor Kesselman
+#+email:     andor@andor.us
+#+setupfile: ~/.config/doom/org-templates/level-2.org
+#+description: Base protocol
+
+* Base Conditions
+
+A person for this protocol must meet the following criteria:
+
+- [ ] Owns a sole LLC proprietorship
+- [ ] Located in the US
+- [ ] Gets paid in 1099
+- [ ] Has an income between 10K and 250K a year.
+- [ ] Interested in reasonable risks and monetary growth.
+- [ ] No kids
+
+* Data Sources
+
+- [ ] Balance Sheet
+- [ ] Income
+- [ ] Expenses
+- [ ] Last few years of 1099
+- [ ] Investment Portfolio
+
+* Parameters
+
+- [ ] Risk Tolerance
+- [ ] Liquidity Preference
+- [ ] Savings Requirements
+- [ ] State of Tax Filing
+
+* Protocol
+
+** Budgeting and Cash Flow Management
+- [ ]
+** Savings and Emergency Funds
+- [ ]
+** Debt Management
+- [ ]
+** Investments
+- [ ]
+** Retirement Planning
+- [ ]
+** Tax Planning
+- [ ]
+** Insurance
+- [ ]
+** Estate Planning
+- [ ]
+** Education Funding
+- [ ]
+** Financial Goals
+- [ ]

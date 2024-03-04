@@ -1,0 +1,10 @@
+#+title: Requirements
+#+author:    Andor Kesselman
+#+email:     andor@andor.us
+#+setupfile: ~/.config/doom/org-templates/level-2.org
+
+* Onboarding
+- Use EIN number
+
+* Integrations
+- RocketChat

@@ -1,0 +1,10 @@
+#+title: Features
+#+author:    andor kesselman
+#+email:     andor@andor.us
+#+setupfile: ~/.config/doom/org-templates/level-2.org
+
+* Roadmap
+* Tasks
+* Protocols
+* Dashboard
+* Alerts and Reminders

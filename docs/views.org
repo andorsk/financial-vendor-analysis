@@ -1,0 +1,31 @@
+#+title: Views
+#+author:    andor kesselman
+#+email:     andor@andor.us
+#+setupfile: ~/.config/doom/org-templates/level-2.org
+
+
+* Onboarding
+Standard signup flow with Google. Login requires EIN number.
+
+#+CAPTION: Onboarding Screen 01
+#+NAME:   fig:home_01
+#+ATTR_HTML: :width 300px
+[[./imgs/onboarding_01.svg]]
+
+* Home Screen
+
+Main components:
+
+- Roadmap :: See your road to the emerald city. See what you need to do to
+  complete your journey
+- Tasks :: Recommendations on action items and next steps.
+- Dashboard :: Basic metrics around your journey. How much steps you you've
+  done, what your opportunities are.
+
+#+CAPTION: Home Screen 01
+#+NAME:   fig:home_01
+#+ATTR_HTML: :width 300px
+[[./imgs/home_01.svg]]
+
+
+* Questions
