@@ -1,21 +1,30 @@
 "use client";
 import { useState } from "react";
+import React, { ChangeEvent } from "react";
 
-function ChatBox({ label }) {
+type ChatBoxProps = {
+  label: string;
+};
+
+type ChatEntry = {
+  type: string;
+  text: string;
+};
+
+function ChatBox({ label }: ChatBoxProps) {
   const [inputValue, setInputValue] = useState("");
-  const [chatHistory, setChatHistory] = useState([]);
+  const [chatHistory, setChatHistory] = useState<ChatEntry[]>([]);
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target!.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!inputValue.trim()) return;
 
-    const newEntry = { type: "question", text: inputValue };
+    const newEntry: ChatEntry = { type: "question", text: inputValue };
     setChatHistory([...chatHistory, newEntry]);
-
     setInputValue("");
 
     const responseEntry = { type: "answer", text: "This is a mock response." };

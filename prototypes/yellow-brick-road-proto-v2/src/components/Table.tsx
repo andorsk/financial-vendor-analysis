@@ -1,6 +1,16 @@
 // components/Table.js
 
-function Table({ data }) {
+type TableProps = {
+  data: {
+    Vendor: string;
+    BestFor: string;
+    Features: string;
+    Cons: string;
+  }[];
+};
+
+function Table(props: TableProps) {
+  const { data } = props;
   return (
     <table
       className="mb-10"

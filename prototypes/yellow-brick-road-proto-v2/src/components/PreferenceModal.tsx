@@ -2,10 +2,22 @@
 
 import { useState } from "react";
 
-function PreferenceModal({ preferences }) {
-  const [prefs, setPrefs] = useState(preferences);
+type PreferenceEntry = {
+  label: string;
+  type: "toggle" | "slider";
+  value: boolean | number;
+  min?: number;
+  max?: number;
+};
 
-  const handleToggleChange = (key) => {
+export type PreferenceModalProps = {
+  [key: string]: PreferenceEntry;
+};
+
+export function PreferenceModal(props: PreferenceModalProps) {
+  const [prefs, setPrefs] = useState<PreferenceModalProps>(props);
+
+  const handleToggleChange = (key: string) => {
     const newPrefs = {
       ...prefs,
       [key]: { ...prefs[key], value: !prefs[key].value },
@@ -13,7 +25,7 @@ function PreferenceModal({ preferences }) {
     setPrefs(newPrefs);
   };
 
-  const handleSliderChange = (key, newValue) => {
+  const handleSliderChange = (key: string, newValue: number) => {
     const newPrefs = { ...prefs, [key]: { ...prefs[key], value: newValue } };
     setPrefs(newPrefs);
   };
@@ -21,7 +33,6 @@ function PreferenceModal({ preferences }) {
   return (
     <div className="p-5 min-w-full">
       <h2>
-        {" "}
         <b> Preference Modal </b>
       </h2>
       {Object.entries(prefs).map(([key, pref]) => {
@@ -33,7 +44,7 @@ function PreferenceModal({ preferences }) {
                   <span className="mr-2">{pref.label}</span>{" "}
                   <input
                     type="checkbox"
-                    checked={pref.value}
+                    checked={!!pref.value} // Ensure `pref.value` is treated as boolean
                     onChange={() => handleToggleChange(key)}
                   />
                 </label>
@@ -48,8 +59,10 @@ function PreferenceModal({ preferences }) {
                     type="range"
                     min={pref.min}
                     max={pref.max}
-                    value={pref.value}
-                    onChange={(e) => handleSliderChange(key, e.target.value)}
+                    value={Number(pref.value)}
+                    onChange={(e) =>
+                      handleSliderChange(key, Number(e.target.value))
+                    }
                   />
                   <span>{pref.value}</span>
                 </label>
