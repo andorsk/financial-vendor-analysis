@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import sampleData from "@/data/high_yield_checking.json";
-import initialPreferences from "@/data/questions";
+import initialPreferences from "@/data/questions.json";
 import Table from "@/components/Table";
 import ChatBox from "@/components/ChatBox";
 import {
@@ -12,9 +12,22 @@ import {
 export default function VendorAssistedTable() {
   const [isOptionsVisible, setIsOptionsVisible] = useState(false); // Start with the modal hidden
 
+  const getType = (t: string) => {
+    switch (t) {
+      case "Boolean":
+        return "toggle";
+      case "Range":
+        return "slider";
+      case "Number":
+        return "value";
+      default:
+        return "";
+    }
+  };
+
   const preferenceEntries = initialPreferences.map((question) => ({
     label: question.Question,
-    type: question.Type === "Boolean" ? "toggle" : "slider",
+    type: getType(question.Type),
     value:
       question.Type === "Boolean"
         ? question.Default === "Yes"
@@ -49,6 +62,7 @@ export default function VendorAssistedTable() {
                   Preferences
                 </h3>
                 <div className="mt-2 py-3">
+                  {/* @ts-ignore */}
                   <PreferenceModal {...preferenceEntries} />
                 </div>
                 <div className="items-center px-4 py-3">

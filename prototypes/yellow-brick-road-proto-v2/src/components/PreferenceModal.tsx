@@ -5,8 +5,8 @@ import Slider from "@/components/Slider";
 
 type PreferenceEntry = {
   label: string;
-  type: "toggle" | "slider";
-  value: boolean | number;
+  type: "toggle" | "slider" | "value";
+  value: boolean | number | string;
   min?: number;
   max?: number;
 };
@@ -53,9 +53,9 @@ export function PreferenceModal(props: PreferenceModalProps) {
                       <span className="mr-2">{pref.label}</span>{" "}
                     </label>
                     <Slider
-                      min={pref.min}
-                      max={pref.max}
-                      defaultValue={pref.value}
+                      min={Number(pref.min)}
+                      max={Number(pref.max)}
+                      defaultValue={Number(pref.value)}
                     />
                   </div>
                 );
