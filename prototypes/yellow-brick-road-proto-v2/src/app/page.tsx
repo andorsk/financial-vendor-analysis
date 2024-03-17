@@ -7,9 +7,7 @@ import VendorAssistedTable from "@/views/VendorAssistedTable";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        <VendorAssistedTable />
-      </div>
+      <VendorAssistedTable className="bg-red-500" />
     </main>
   );
 }

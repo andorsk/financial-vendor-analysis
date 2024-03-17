@@ -1,4 +1,7 @@
+"use client";
+import React, { useState } from "react";
 import sampleData from "@/data/high_yield_checking.json";
+import initialPreferences from "@/data/questions";
 import Table from "@/components/Table";
 import ChatBox from "@/components/ChatBox";
 import {
@@ -7,36 +10,61 @@ import {
 } from "@/components/PreferenceModal";
 
 export default function VendorAssistedTable() {
-  const initialPreferences: PreferenceModalProps = {
-    business: { type: "toggle", label: "Business Account", value: true },
-    highYield: {
-      type: "slider",
-      label: "High Yield",
-      value: 50,
-      min: 0,
-      max: 100,
-    },
-    riskTolerance: {
-      type: "slider",
-      label: "Risk Tolerance",
-      value: 30,
-      min: 0,
-      max: 100,
-    },
-  };
+  const [isOptionsVisible, setIsOptionsVisible] = useState(false); // Start with the modal hidden
+
+  const preferenceEntries = initialPreferences.map((question) => ({
+    label: question.Question,
+    type: question.Type === "Boolean" ? "toggle" : "slider",
+    value:
+      question.Type === "Boolean"
+        ? question.Default === "Yes"
+        : Number(question.Default),
+    min: question.Min !== undefined ? Number(question.Min) : undefined,
+    max:
+      question.Max !== undefined
+        ? question.Max === "100000+"
+          ? 100000
+          : Number(question.Max)
+        : undefined,
+  }));
+
   return (
-    <div>
-      <ChatBox label="In your words, describe your situation:" />
-      <div className="z-10 max-w-7xl w-fullkkkkk  flex flex-col lg:flex-row items-center justify-between font-mono text-sm">
-        <div className="flex flex-col items-center lg:items-start justify-between w-full lg:w-2/3 mb-5">
-          <p className="text-2xl font-light p-5">
-            High Yield Checking Accounts
-          </p>
-          <div>
-            <PreferenceModal {...initialPreferences} />
+    <div className=" justify-between p-10">
+      <div className="w-full">
+        <button
+          className="px-4 py-2 rounded m-4"
+          onClick={() => setIsOptionsVisible(!isOptionsVisible)}
+        >
+          Show Options{" "}
+        </button>
+        {isOptionsVisible && (
+          <div
+            className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
+            id="optionModal"
+          >
+            <div className="relative top-20 mx-auto p-5 border w-1/2 shadow-lg rounded-md bg-white">
+              <div className="mt-3 text-left">
+                <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100"></div>
+                <h3 className="text-lg leading-6 font-medium text-gray-900">
+                  Preferences
+                </h3>
+                <div className="mt-2 py-3">
+                  <PreferenceModal {...preferenceEntries} />
+                </div>
+                <div className="items-center px-4 py-3">
+                  <button
+                    onClick={() => setIsOptionsVisible(false)}
+                    className="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-300"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="flex items-center justify-between p-10">
+        )}
+
+        <div className="">
           <Table data={sampleData} />
         </div>
       </div>

@@ -1,0 +1,92 @@
+[
+    {
+        "Question": "How much you care about whether the accounts have a physical preference?",
+        "Type": "Number",
+        "Default": "5",
+        "Min": "0",
+        "Max": "10"
+    },
+    {
+        "Question": "Do you need ACH?",
+        "Type": "Boolean",
+        "Default": "Yes"
+    },
+    {
+        "Question": "Do you need Bill Pay?",
+        "Type": "Boolean",
+        "Default": "Yes"
+    },
+    {
+        "Question": "Do you want Zelle?",
+        "Type": "Boolean",
+        "Default": "Yes"
+    },
+    {
+        "Question": "What's the minimum balance you expect to keep on your account?",
+        "Type": "Number",
+        "Default": "0"
+    },
+    {
+        "Question": "How much do you care about making multiple accounts?",
+        "Type": "Number",
+        "Default": "5",
+        "Min": "0",
+        "Max": "10"
+    },
+    {
+        "Question": "How much do you care about international support?",
+        "Type": "Number",
+        "Default": "5",
+        "Min": "0",
+        "Max": "10"
+    },
+    {
+        "Question": "How much do you care about bank reliability?",
+        "Type": "Number",
+        "Default": "5",
+        "Min": "0",
+        "Max": "10"
+    },
+    {
+        "Question": "How much do you expect to keep in your bank at most times?",
+        "Type": "Range",
+        "Default": "0",
+        "Min": "0",
+        "Max": "100000+"
+    },
+    {
+        "Question": "Do you expect it to increase over time?",
+        "Type": "Boolean",
+        "Default": "No"
+    },
+    {
+        "Question": "How much do you care about ATM support?",
+        "Type": "Number",
+        "Default": "5",
+        "Min": "0",
+        "Max": "10"
+    },
+    {
+        "Question": "Do you care about having a dedicated Business Manager?",
+        "Type": "Boolean",
+        "Default": "Yes"
+    },
+    {
+        "Question": "Do you care if you have to spend a fee to keep the account open?",
+        "Type": "Boolean",
+        "Default": "Yes"
+    },
+    {
+        "Question": "Where do you operate?",
+        "Type": "Number"
+    },
+    {
+        "Question": "How much do you care about the digital app quality",
+        "Type": "Number"
+    },
+    {
+        "Question": "Do you need wire transfers?",
+        "Type": "Boolean",
+        "Default": "Yes"
+    }
+]

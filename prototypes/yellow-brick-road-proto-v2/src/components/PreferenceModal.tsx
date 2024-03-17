@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Slider from "@/components/Slider";
 
 type PreferenceEntry = {
   label: string;
@@ -16,6 +17,7 @@ export type PreferenceModalProps = {
 
 export function PreferenceModal(props: PreferenceModalProps) {
   const [prefs, setPrefs] = useState<PreferenceModalProps>(props);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggleChange = (key: string) => {
     const newPrefs = {
@@ -25,53 +27,53 @@ export function PreferenceModal(props: PreferenceModalProps) {
     setPrefs(newPrefs);
   };
 
-  const handleSliderChange = (key: string, newValue: number) => {
-    const newPrefs = { ...prefs, [key]: { ...prefs[key], value: newValue } };
-    setPrefs(newPrefs);
-  };
-
   return (
-    <div className="p-5 min-w-full">
-      <h2>
-        <b> Preference Modal </b>
-      </h2>
-      {Object.entries(prefs).map(([key, pref]) => {
-        switch (pref.type) {
-          case "toggle":
-            return (
-              <div key={key}>
-                <label>
-                  <span className="mr-2">{pref.label}</span>{" "}
-                  <input
-                    type="checkbox"
-                    checked={!!pref.value} // Ensure `pref.value` is treated as boolean
-                    onChange={() => handleToggleChange(key)}
-                  />
-                </label>
-              </div>
-            );
-          case "slider":
-            return (
-              <div key={key}>
-                <label className="mr-2">
-                  <span className="mr-2">{pref.label}</span>{" "}
-                  <input
-                    type="range"
-                    min={pref.min}
-                    max={pref.max}
-                    value={Number(pref.value)}
-                    onChange={(e) =>
-                      handleSliderChange(key, Number(e.target.value))
-                    }
-                  />
-                  <span>{pref.value}</span>
-                </label>
-              </div>
-            );
-          default:
-            return null;
-        }
-      })}
+    <div className="flex justify-between">
+      <div className={`w-full transition-all duration-300 ease-in-out`}>
+        <div>
+          {Object.entries(prefs).map(([key, pref]) => {
+            switch (pref.type) {
+              case "toggle":
+                return (
+                  <div key={key}>
+                    <label>
+                      <span className="mr-2">{pref.label}</span>{" "}
+                      <input
+                        type="checkbox"
+                        checked={!!pref.value} // Ensure `pref.value` is treated as boolean
+                        onChange={() => handleToggleChange(key)}
+                      />
+                    </label>
+                  </div>
+                );
+              case "slider":
+                return (
+                  <div key={key}>
+                    <label className="mr-2">
+                      <span className="mr-2">{pref.label}</span>{" "}
+                    </label>
+                    <Slider
+                      min={pref.min}
+                      max={pref.max}
+                      defaultValue={pref.value}
+                    />
+                  </div>
+                );
+              case "value":
+                return (
+                  <div key={key}>
+                    <label className="mr-2">
+                      <span className="mr-2">{pref.label}</span>{" "}
+                    </label>
+                    <span>{pref.value}</span>
+                  </div>
+                );
+              default:
+                return null;
+            }
+          })}
+        </div>
+      </div>
     </div>
   );
 }
