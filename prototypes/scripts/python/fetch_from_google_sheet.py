@@ -2,6 +2,7 @@ import os.path
 
 import json
 import argparse
+import pandas as pd
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -38,9 +39,14 @@ def parse_args():
       default=SAMPLE_RANGE_NAME,
       help="The range of the spreadsheet to fetch data from",
   )
+  parser.add_argument(
+      "--transposed",
+      action="store_true",
+      help="If transposed, assumes column based JSON",
+  )
   return parser.parse_args()
 
-def fetch(service_accout_file, spreadsheet_id, range_name):
+def fetch(service_accout_file, spreadsheet_id, range_name, transposed=False):
   creds = None
   creds = Credentials.from_service_account_file(
         service_accout_file,
@@ -56,11 +62,18 @@ def fetch(service_accout_file, spreadsheet_id, range_name):
         .get(spreadsheetId=spreadsheet_id, range=range_name)
         .execute()
     )
+
     values = result.get("values", [])
     keys = values[0]
-    items = [dict(zip(keys, v)) for v in values[1:]]
-    json_data = json.dumps(items, indent=4)
-    print(json_data)
+    if not transposed:
+      items = [dict(zip(keys, v)) for v in values[1:]]
+      json_data = json.dumps(items, indent=4)
+      print(json_data)
+    else:
+      df = pd.DataFrame(values, columns=keys)
+      df.set_index(keys[0], inplace=True)
+      json_data = json.dumps(df.to_dict(), indent=4)
+      print(json_data)
   except HttpError as err:
     print(err)
 
@@ -69,7 +82,7 @@ def main():
   Fetch data from Google Sheets
   '''
   args = parse_args()
-  fetch(args.service_account_file, args.spreadsheet_id, args.range_name)
+  fetch(args.service_account_file, args.spreadsheet_id, args.range_name, args.transposed)
 
 if __name__ == "__main__":
   main()
