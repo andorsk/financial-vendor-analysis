@@ -31,7 +31,6 @@ class HeuristicScorer():
             raise ValueError("not trained")
         if self._distance_metric is None:
             raise ValueError("please put valid distance metric")
-        print("--------")
         dist = distance.cdist(X, self._x)#, metric=self._distance_metric)
         return [np.argsort(dist), dist]
 
@@ -66,7 +65,7 @@ pipeline1 = Pipeline(steps=[
 ])
 
 def init():
-    path = os.environ.get('DATA_PATH', '../data/questions.json')
+    path = os.environ.get('DATA_PATH', 'data/questions.json')
     data = load_data(path)
     try:
         pipeline1.fit(data)
