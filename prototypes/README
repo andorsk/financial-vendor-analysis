@@ -1,3 +1,4 @@
 * frontend - nextjs app for rendering content. TODO : Possibly reconsider rendering server side. 
 * backend - data and python based analysis. 
 * ds -- juypter notebooks
+* scripts -- data extraction scripts
