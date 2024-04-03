@@ -24,3 +24,9 @@ def test_infer_endpoint(client):
     assert response.status_code == 200
     expected_response = [[0, 1]]
     assert response.json[0] == expected_response
+
+def test_data_endpoint(client):
+    response = client.get('/data')
+    assert response.status_code == 200
+    data = load_data('data/questions.json')
+    assert response.json == data.to_dict()
