@@ -8,3 +8,4 @@ pydantic
 flasgger
 flask_cors
 flatbuffers
+openpyxl
