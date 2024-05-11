@@ -81,7 +81,7 @@ const AccountTable = () => {
   return (
     <div className="mx-auto overflow-scroll ">
       Please Select Your Preference Ranking on Each Column
-      <table className="table-auto bg-white border text-black border-gray-300 shadow-sm rounded-lg">
+      <table className="table-auto min-w-full divide-y divide-gray-200">
         <thead className="bg-gray-200">
           <tr>
             <th className="px-4 py-2">Ranking</th>
@@ -113,19 +113,34 @@ const AccountTable = () => {
             ))}
           </tr>
         </thead>
-        <tbody>
-          {data?.headers.map((header, i) => (
+        <tbody className="bg-white divide-y divide-gray-200">
+          {sortedIndices.map((header, i) => (
             <tr key={header} className="border-b border-gray-300">
-              <td className="text-xl font-bold"> {i} </td>
+              <td className="text-xl font-bold"> {i + 1} </td>
               <td className="px-4 py-2 font-medium">{header}</td>
               <td className="text-xl font-bold">
                 {scores && <div>{scores[header]}</div>}{" "}
               </td>
-              {data?.data.map((item: any, j: number) => (
-                <td key={j} className="px-4 py-2">
-                  {data?.data[j][i]}
-                </td>
-              ))}
+              {data?.data.map((item: any, j: number) => {
+                const text = data?.data[j][data?.headers.indexOf(header)];
+                const isLongText = text.length * 8 > 300; // Assuming an average character width of 8px
+                return (
+                  <td
+                    key={j}
+                    className={`px-4 py-2 whitespace-pre-line overflow-hidden max-w-lg text-sm`}
+                    style={{ minWidth: isLongText ? "300px" : "auto" }}
+                  >
+                    <div className="w-full">
+                      <span
+                        className="inline-block overflow-hidden overflow-ellipsis"
+                        style={{ maxWidth: isLongText ? "300px" : "none" }}
+                      >
+                        {text}
+                      </span>
+                    </div>
+                  </td>
+                );
+              })}
             </tr>
           ))}
         </tbody>
