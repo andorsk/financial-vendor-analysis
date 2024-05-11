@@ -7,3 +7,4 @@ pytest-flask
 pydantic
 flasgger
 flask_cors
+flatbuffers
