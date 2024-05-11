@@ -1,0 +1,69 @@
+namespace Banking;
+
+// Updated AccountFeatures table with snake_case names
+table AccountFeatures {
+    feature: string;
+    pros: string;
+    cons: string;
+    good_for: string;
+    monthly_fee: float; // Assuming monthly fees can be fractional
+    invoicing: bool;
+    budgeting: bool;
+    payments: bool;
+    hidden_fees: bool;
+    application_speed: float; // Assuming this could be a score or rating that might be fractional
+    atm_support: bool;
+    free_transfers: bool;
+    fdic_insured: bool;
+    checks: bool;
+    wires: bool;
+    rewards_program: bool;
+    insured_amount: float;
+    encrypted: bool;
+    virtual_card: bool;
+    physical_card: bool;
+    integrations: bool;
+    integration_score: float;
+    atm_fees: float;
+    trust_pilot_score: float;
+    ios_app_score: float;
+    ios_app: bool;
+    ios_number_of_ratings: int; // Corrected to int
+    android_app: bool;
+    android_app_score: float;
+    android_app_download: int;
+    android_number_of_ratings: int; // Corrected to int
+    osx_app: bool;
+    web_app: bool;
+    windows_app: bool;
+    linux_app: bool;
+    open_source: bool;
+    offline_support: bool;
+    pwa: bool;
+    nerd_wallet_score: float;
+    linkedin: bool;
+    twitter: bool;
+    instagram: bool;
+    facebook: bool;
+    community_size: int;
+    support_score: float;
+    headquarters: string;
+    physical_branch_presence_score: float;
+    deposit_limit: int;
+    transaction_limits: int;
+    zelle: bool;
+    ease_of_setup: float;
+    bank_reliability: float;
+    dedicated_business_manager: bool;
+    wire_transfers: bool;
+    accessibility_score: float;
+    signup_benefits: bool;
+    overdraft_protection: bool;
+    atm_presence_score: float;
+}
+
+table BankingProducts {
+    products: [AccountFeatures];
+}
+
+root_type BankingProducts;

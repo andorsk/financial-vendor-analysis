@@ -1,0 +1,413 @@
+{
+  "alias": {
+    "accessibility_score": "Accessibility Score",
+    "android_app": "Andoroid App",
+    "android_app_download": "Android App Download",
+    "android_app_score": "Android App Score",
+    "android_number_of_ratings": "Android App # of Ratings",
+    "application_speed": "Application Speed",
+    "atm_fees": "ATM Fees",
+    "atm_presence_score": "ATM Presence Score",
+    "atm_support": "ATM Support",
+    "bank_reliability": "Bank Reliability",
+    "budgeting": "Budgeting",
+    "checks": "Checks",
+    "community_size": "Community Size",
+    "cons": "Cons",
+    "dedicated_business_manager": "Dedicated Business Manager",
+    "deposit_limit": "Deposit Limit",
+    "ease_of_setup": "Ease of Setup",
+    "encrypted": "Encrypted",
+    "facebook": "Facebook",
+    "fdic_insured": "FDIC Insured",
+    "free_transfers": "Free Transfers",
+    "good_for": "Good For",
+    "headquarters": "Headquarters",
+    "hidden_fees": "Hidden Fees",
+    "instagram": "Instagram",
+    "insured_amount": "Insured Amount",
+    "integration_score": "Integration Score",
+    "integrations": "Integrations",
+    "invoicing": "Invoicing",
+    "ios_app": "iOS App",
+    "ios_app_score": "iOS App Score",
+    "ios_number_of_ratings": "iOS # of Ratings",
+    "linkedin": "Linkedin",
+    "linux_app": "Linux App",
+    "monthly_fee": "Monthly Fee",
+    "nerd_wallet_score": "Nerd Wallet Score",
+    "offline_support": "Offline Support",
+    "open_source": "Open Source",
+    "osx_app": "OSX App",
+    "overdraft_protection": "Overdraft Protection?",
+    "payments": "Payments",
+    "physical_branch_presence_score": "Physical Branch Presence Score",
+    "physical_card": "Physical Card",
+    "pros": "Pros",
+    "pwa": "PWA",
+    "rewards_program": "Rewards Program",
+    "signup_benefits": "Signup Benefits",
+    "support_score": "Support Score",
+    "transaction_limits": "Transaction Limits",
+    "trust_pilot_score": "Trust Pilot Score",
+    "twitter": "X ",
+    "virtual_card": "Virtual Card",
+    "web_app": "Web App",
+    "windows_app": "Windows App",
+    "wire_transfers": "Wire Transfers",
+    "wires": "Wires",
+    "zelle": "Zelle"
+  },
+  "data": [
+    [
+      "0 monthly fees, unlimited transactions, free debit card with ATM fee reimbursement, mobile banking and bill pay, integrations with popular accounting software",
+      "$15 monthly maintenance fee waived with a $1,500 minimum monthly balance, 25 free monthly transactions, additional fees for exceeding free transactions, cashier's checks, positive pay, night depository (varies by branch), mobile banking and bill pay."
+    ],
+    [
+      "Limited physical branch access, lower check deposit limits compared to some competitors",
+      "Monthly maintenance fee if minimum balance not met, limited free transactions compared to some competitors."
+    ],
+    [
+      "Small Business Owners Who Don't Care About Physical Branch Access",
+      "Businesses needing access to a broad range of banking services and national branch network"
+    ],
+    [
+      0.0,
+      15.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      4.0,
+      3.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      -1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      250000.0,
+      -1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      4.0,
+      3.0
+    ],
+    [
+      3.0,
+      -1.0
+    ],
+    [
+      4.5,
+      1.3
+    ],
+    [
+      4.8,
+      4.8
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      5.0,
+      400000.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      4.6,
+      4.4
+    ],
+    [
+      -1.0,
+      50000000.0
+    ],
+    [
+      -1.0,
+      1800000.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -1.0,
+      0.0
+    ],
+    [
+      4.4,
+      -1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      13500.0,
+      18500000.0
+    ],
+    [
+      4.0,
+      3.0
+    ],
+    [
+      -1.0,
+      -1.0
+    ],
+    [
+      1.0,
+      4.0
+    ],
+    [
+      5.0,
+      20000.0
+    ],
+    [
+      3.0,
+      -1.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      4.0,
+      3.0
+    ],
+    [
+      3.0,
+      4.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      3.0,
+      4.0
+    ],
+    [
+      0.0,
+      3.0
+    ],
+    [
+      -1.0,
+      -1.0
+    ],
+    [
+      0.0,
+      5.0
+    ]
+  ],
+  "headers": [
+    "0vo Business Checking",
+    "Chase Business Complete Banking"
+  ],
+  "index": [
+    "pros",
+    "cons",
+    "good_for",
+    "monthly_fee",
+    "invoicing",
+    "budgeting",
+    "payments",
+    "hidden_fees",
+    "application_speed",
+    "atm_support",
+    "free_transfers",
+    "fdic_insured",
+    "checks",
+    "wires",
+    "rewards_program",
+    "insured_amount",
+    "encrypted",
+    "virtual_card",
+    "physical_card",
+    "integrations",
+    "integration_score",
+    "atm_fees",
+    "trust_pilot_score",
+    "ios_app_score",
+    "ios_app",
+    "ios_number_of_ratings",
+    "android_app",
+    "android_app_score",
+    "android_app_download",
+    "android_number_of_ratings",
+    "osx_app",
+    "web_app",
+    "windows_app",
+    "linux_app",
+    "open_source",
+    "offline_support",
+    "pwa",
+    "nerd_wallet_score",
+    "linkedin",
+    "twitter",
+    "instagram",
+    "facebook",
+    "community_size",
+    "support_score",
+    "headquarters",
+    "physical_branch_presence_score",
+    "deposit_limit",
+    "transaction_limits",
+    "zelle",
+    "ease_of_setup",
+    "bank_reliability",
+    "dedicated_business_manager",
+    "wire_transfers",
+    "accessibility_score",
+    "signup_benefits",
+    "overdraft_protection",
+    "atm_presence_score"
+  ],
+  "weight": {
+    "accessibility_score": 5.0,
+    "android_app": 5.0,
+    "android_app_download": 5.0,
+    "android_app_score": 5.0,
+    "android_number_of_ratings": 5.0,
+    "application_speed": 5.0,
+    "atm_fees": 5.0,
+    "atm_presence_score": 5.0,
+    "atm_support": 5.0,
+    "bank_reliability": 5.0,
+    "budgeting": 5.0,
+    "checks": 5.0,
+    "community_size": 5.0,
+    "cons": -1.0,
+    "dedicated_business_manager": 5.0,
+    "deposit_limit": 5.0,
+    "ease_of_setup": 5.0,
+    "encrypted": 5.0,
+    "facebook": 5.0,
+    "fdic_insured": 5.0,
+    "free_transfers": 5.0,
+    "good_for": -1.0,
+    "headquarters": 5.0,
+    "hidden_fees": 5.0,
+    "instagram": 5.0,
+    "insured_amount": 5.0,
+    "integration_score": 5.0,
+    "integrations": 5.0,
+    "invoicing": 5.0,
+    "ios_app": 5.0,
+    "ios_app_score": 5.0,
+    "ios_number_of_ratings": 5.0,
+    "linkedin": 5.0,
+    "linux_app": 5.0,
+    "monthly_fee": 5.0,
+    "nerd_wallet_score": 5.0,
+    "offline_support": 5.0,
+    "open_source": 5.0,
+    "osx_app": 5.0,
+    "overdraft_protection": 5.0,
+    "payments": 5.0,
+    "physical_branch_presence_score": 5.0,
+    "physical_card": 5.0,
+    "pros": -1.0,
+    "pwa": 5.0,
+    "rewards_program": 5.0,
+    "signup_benefits": 5.0,
+    "support_score": 5.0,
+    "transaction_limits": 5.0,
+    "trust_pilot_score": 5.0,
+    "twitter": 5.0,
+    "virtual_card": 5.0,
+    "web_app": 5.0,
+    "windows_app": 5.0,
+    "wire_transfers": 5.0,
+    "wires": 5.0,
+    "zelle": 5.0
+  }
+}

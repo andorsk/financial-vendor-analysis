@@ -1,0 +1,182 @@
+{
+  "ATM Fees": {
+    "Chase Business Complete Banking": 0.0,
+    "Novo Business Checking": 3.0
+  },
+  "ATM Presence Score": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 0
+  },
+  "ATM Support": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Accessibility Score": {
+    "Chase Business Complete Banking": 4,
+    "Novo Business Checking": 3
+  },
+  "Andoroid App": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Android App Score": {
+    "Chase Business Complete Banking": 4.4,
+    "Novo Business Checking": 4.6
+  },
+  "Application Speed": {
+    "Chase Business Complete Banking": 3,
+    "Novo Business Checking": 4
+  },
+  "Bank Reliability": {
+    "Chase Business Complete Banking": 4,
+    "Novo Business Checking": 3
+  },
+  "Budgeting": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Checks": {
+    "Chase Business Complete Banking": 0.0,
+    "Novo Business Checking": 5.0
+  },
+  "Dedicated Business Manager": {
+    "Chase Business Complete Banking": 0,
+    "Novo Business Checking": 0
+  },
+  "Ease of Setup": {
+    "Chase Business Complete Banking": 3,
+    "Novo Business Checking": 4
+  },
+  "Encrypted": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "FDIC Insured": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Facebook": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Free Transfers": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Hidden Fees": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 0
+  },
+  "Instagram": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Integration Score": {
+    "Chase Business Complete Banking": 3,
+    "Novo Business Checking": 4
+  },
+  "Integrations": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Invoicing": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Linkedin": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Linux App": {
+    "Chase Business Complete Banking": 0,
+    "Novo Business Checking": 0
+  },
+  "OSX App": {
+    "Chase Business Complete Banking": 0,
+    "Novo Business Checking": 0
+  },
+  "Offline Support": {
+    "Chase Business Complete Banking": 0,
+    "Novo Business Checking": 0
+  },
+  "Open Source": {
+    "Chase Business Complete Banking": 0,
+    "Novo Business Checking": 0
+  },
+  "Overdraft Protection?": {
+    "Chase Business Complete Banking": 0.0,
+    "Novo Business Checking": 0.0
+  },
+  "PWA": {
+    "Chase Business Complete Banking": 0.0,
+    "Novo Business Checking": 0.0
+  },
+  "Payments": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Physical Branch Presence Score": {
+    "Chase Business Complete Banking": 4,
+    "Novo Business Checking": 1
+  },
+  "Physical Card": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Rewards Program": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 0
+  },
+  "Signup Benefits": {
+    "Chase Business Complete Banking": 3,
+    "Novo Business Checking": 0
+  },
+  "Support Score": {
+    "Chase Business Complete Banking": 3,
+    "Novo Business Checking": 4
+  },
+  "Transaction Limits": {
+    "Chase Business Complete Banking": 0.0,
+    "Novo Business Checking": 3.0
+  },
+  "Trust Pilot Score": {
+    "Chase Business Complete Banking": 1.3,
+    "Novo Business Checking": 4.5
+  },
+  "Virtual Card": {
+    "Chase Business Complete Banking": 0,
+    "Novo Business Checking": 5
+  },
+  "Web App": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Windows App": {
+    "Chase Business Complete Banking": 0,
+    "Novo Business Checking": 0
+  },
+  "Wire Transfers": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Wires": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "X ": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "Zelle": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 0
+  },
+  "iOS App": {
+    "Chase Business Complete Banking": 5,
+    "Novo Business Checking": 5
+  },
+  "iOS App Score": {
+    "Chase Business Complete Banking": 4.8,
+    "Novo Business Checking": 4.8
+  }
+}

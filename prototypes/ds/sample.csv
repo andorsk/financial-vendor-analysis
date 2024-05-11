@@ -1,0 +1,58 @@
+Feature,field,Weight out of 10,FALSEvo Business Checking,Chase Business Complete Banking
+Pros,pros,,"FALSE monthly fees, unlimited transactions, free debit card with ATM fee reimbursement, mobile banking and bill pay, integrations with popular accounting software","$15 monthly maintenance fee waived with a $1,500 minimum monthly balance, 25 free monthly transactions, additional fees for exceeding free transactions, cashier's checks, positive pay, night depository (varies by branch), mobile banking and bill pay."
+Cons,cons,,"Limited physical branch access, lower check deposit limits compared to some competitors","Monthly maintenance fee if minimum balance not met, limited free transactions compared to some competitors."
+Good For,good_for,,Small Business Owners Who Don't Care About Physical Branch Access,Businesses needing access to a broad range of banking services and national branch network
+Monthly Fee,monthly_fee,5,0,$15
+Invoicing,invoicing,5,TRUE,TRUE
+Budgeting,budgeting,5,TRUE,TRUE
+Payments,payments,5,TRUE,TRUE
+Hidden Fees,hidden_fees,5,FALSE,TRUE
+Application Speed,application_speed,5,4,3
+ATM Support,atm_support,5,TRUE,TRUE
+Free Transfers,free_transfers,5,TRUE,TRUE
+FDIC Insured,fdic_insured,5,TRUE,TRUE
+Checks,checks,5,TRUE,
+Wires,wires,5,TRUE,TRUE
+Rewards Program,rewards_program,5,FALSE,TRUE
+Insured Amount,insured_amount,5,"$250,000.00",
+Encrypted,encrypted,5,TRUE,TRUE
+Virtual Card,virtual_card,5,TRUE,FALSE
+Physical Card,physical_card,5,TRUE,TRUE
+Integrations,integrations,5,TRUE,TRUE
+Integration Score,integration_score,5,4,3
+ATM Fees,atm_fees,5,3,
+Trust Pilot Score,trust_pilot_score,5,4.5,1.3
+iOS App Score,ios_app_score,5,4.8,4.8
+iOS App,ios_app,5,TRUE,TRUE
+iOS # of Ratings,ios_number_of_ratings,5,,"5,400,000"
+Andoroid App,android_app,5,TRUE,TRUE
+Android App Score,android_app_score,5,4.6,4.4
+Android App Download,android_app_download,5,,"50,000,000"
+Android App # of Ratings,android_number_of_ratings,5,,"1,800,000"
+OSX App,osx_app,5,FALSE,FALSE
+Web App,web_app,5,TRUE,TRUE
+Windows App,windows_app,5,FALSE,FALSE
+Linux App,linux_app,5,FALSE,FALSE
+Open Source,open_source,5,FALSE,FALSE
+Offline Support,offline_support,5,FALSE,FALSE
+PWA,pwa,5,,FALSE
+Nerd Wallet Score,nerd_wallet_score,5,4.4,N/A
+Linkedin,linkedin,5,TRUE,TRUE
+X ,twitter,5,TRUE,TRUE
+Instagram,instagram,5,TRUE,TRUE
+Facebook,facebook,5,TRUE,TRUE
+Community Size,community_size,5,13500,"18,500,000"
+Support Score,support_score,5,4,3
+Headquarters,headquarters,5,Miami,New York
+Physical Branch Presence Score,physical_branch_presence_score,5,1,4
+Deposit Limit,deposit_limit,5,5,"$20,000"
+Transaction Limits,transaction_limits,5,3,
+Zelle,zelle,5,FALSE,TRUE
+Ease of Setup,ease_of_setup,5,4,3
+Bank Reliability,bank_reliability,5,3,4
+Dedicated Business Manager,dedicated_business_manager,5,FALSE,FALSE
+Wire Transfers,wire_transfers,5,TRUE,TRUE
+Accessibility Score,accessibility_score,5,3,4
+Signup Benefits,signup_benefits,5,0,3
+Overdraft Protection?,overdraft_protection,5,,
+ATM Presence Score,atm_presence_score,5,0,5

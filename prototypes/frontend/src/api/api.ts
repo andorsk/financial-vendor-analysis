@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // Set the API base URL
-const API_BASE_URL = process.env.API_BASE_URL || "https://localhost:3000";
+const API_BASE_URL = process.env.API_BASE_URL || "http://localhost:5000";
 
 // Interface for the data you might send in a POST request
 interface PostData {

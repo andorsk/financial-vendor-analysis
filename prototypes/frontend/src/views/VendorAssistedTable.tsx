@@ -1,9 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import sampleData from "@/data/high_yield_checking.json";
+import sampleData2 from "@/data/fields.json";
 import initialPreferences from "@/data/questions.json";
 import Table from "@/components/Table";
 import ChatBox from "@/components/ChatBox";
+// import { getData } from "@/api/api";
+
 import {
   PreferenceModal,
   PreferenceModalProps,
@@ -24,6 +27,16 @@ export default function VendorAssistedTable() {
         return "";
     }
   };
+
+  /*
+   *   console.log("getting data...");
+   *   getData()
+   *     .then((d) => {
+   *       console.log(d);
+   *     })
+   *     .catch((e) => {
+   *       console.error(e);
+   *     }); */
 
   const preferenceEntries = initialPreferences.map((question) => ({
     label: question.Question,

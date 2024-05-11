@@ -5,3 +5,5 @@ pandas
 pytest
 pytest-flask
 pydantic
+flasgger
+flask_cors
