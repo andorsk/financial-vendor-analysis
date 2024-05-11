@@ -9,4 +9,5 @@ RUN npm run build
 FROM nginx:latest
 COPY --from=builder /app/build /usr/share/nginx/html
 EXPOSE 80
+ENV REACT_APP_API_URL=https://ybr-api.andor.us/
 CMD ["nginx", "-g", "daemon off;"]
