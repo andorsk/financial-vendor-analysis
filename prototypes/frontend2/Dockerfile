@@ -4,6 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
+ENV REACT_APP_API_URL=https://ybr-api.andor.us/
 RUN npm run build
 # Stage 2: Create the production image
 FROM nginx:latest

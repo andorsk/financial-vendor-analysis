@@ -1,6 +1,6 @@
 import { AccountFeatures, BankingProducts } from "@/models/gen/banking";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://127.0.0.1:5001";
+const API_URL = process.env.REACT_APP_API_URL || "https://ybr.andor.us";
 
 export const requestRanking = async (data: any) => {
   const url = `${API_URL}/infer/ranking`;
